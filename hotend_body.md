@@ -13,25 +13,25 @@ Images need to be redrawn and placed under a suitable license (CC BY-SA).
 ## `hotend_body` Bodypart of the hotend (aluminum block)
 ![](https://i.imgur.com/micDHMy.png)
 :::warning
-:hammer_and_wrench: This part is DIY, it needs drilling (6mm) and internal thread (M7 tab).
+:hammer_and_wrench: This part is DIY, it needs drilling (5mm) and internal thread (M6 tab).
 :::
 
 ### properties (full spec)
 :::info
 the following information fully specifies the part
 :::
-- material: aluminium alloy [6xxx series](https://en.wikipedia.org/wiki/Aluminium_alloy#6000_series) (typically [6061](https://en.wikipedia.org/wiki/6061_aluminium_alloy))
 - dimensions (hight x depth x width): 0.5 x 1 x 1.6 inch (= 12.7 x 25.4 x 40 mm)
     - width ≈ 40mm $\rightarrow$ `axial_fan-4010`
     - :exclamation: `{ghent}` Ghent-build width: 47mm
+- material: aluminium alloy [6xxx series](https://en.wikipedia.org/wiki/Aluminium_alloy#6000_series) (typically [6061](https://en.wikipedia.org/wiki/6061_aluminium_alloy))
 
 ### reference suppliers
 :::info
 these suppliers provide good information and specs, they are not necessarily cheap
 :::
-:flag-us: [McMaster-Carr (6061-T6511)](https://www.mcmaster.com/aluminum-alloy-6061/shape~sheet-and-bar/multipurpose-6061-aluminum-sheets-and-bars-7/width~1inches/thickness~0-5inches/)
-:flag-de: [Alu-Shop (6060-T66, 25x12 and 25x15)](https://www.aluminium-online-shop.de/de/shop-aluminium-kleinstmengen/Flachstangen-_-16/index.html)
-:flag-de: [Metall-Fachhandel (6082-T6, 25x12 and 25x15)](https://metall-fachhandel.de/produkt/aluminium-flachstangen-almgsi1-6082/)
+:flag-us: [McMaster-Carr (6061-T6511)](https://www.mcmaster.com/aluminum-alloy-6061/shape~sheet-and-bar/multipurpose-6061-aluminum-sheets-and-bars-7/width~1inches/thickness~0-5inches/)  
+:flag-de: [Alu-Shop (6060-T66, 25x12 and 25x15)](https://www.aluminium-online-shop.de/de/shop-aluminium-kleinstmengen/Flachstangen-_-16/index.html)  
+:flag-de: [Metall-Fachhandel (6082-T6, 25x12 and 25x15)](https://metall-fachhandel.de/produkt/aluminium-flachstangen-almgsi1-6082/)  
 :flag-de: [Bikar, B2B only (6060-T?, 25x12 and 25x15)](https://www.bikar.com/aluminium-flachstangen.html)
 
 ### procurement : flat bar ½x1"
@@ -45,6 +45,8 @@ these suppliers provide good information and specs, they are not necessarily che
 
 ### material: aluminum alloy 6xxx series
 - alloy composition: Al-Mg-Si
+    - Mg: increases tensile strength, better non-corrosiveness
+    - Si: better non-corrosiveness, combined with Mg better welding/soldering
 - strenghtening via heat treatment
 - norms
     - :flag-us: The Aluminum Association: AA 6xxx
@@ -52,17 +54,18 @@ these suppliers provide good information and specs, they are not necessarily che
 
 ![](https://i.imgur.com/iENku6e.png =x250)
 
-#### 6061 (multipurpose) (more common in US/UK ?)
+#### 6061 (multipurpose) (more common in US/UK ?) [:link:](https://en.wikipedia.org/wiki/6061_aluminium_alloy)
 - universal, structural
 - offers trade-off between fair strenth, good corrosion resistance, and good machinability
+- yield strength: ~276 MPa
 ![](https://i.imgur.com/f1KPwl8.png)
-#### 6060 / 3.3206 (multipurpose) (more common in Europe?)
+#### 6060 / 3.3206 (multipurpose) (more common in Europe?) [:link:](https://en.wikipedia.org/wiki/6060_aluminium_alloy)
 - "heat sink sections, electronic modules, electro motor housings" [:link:](http://www.aalco.co.uk/datasheets/Aluminium-Alloy-6060-T5--Extrusions_144.ashx)
 - tensile strength: ~125 MPa
 
 #### finish/surface: don't care (?)
 - mill-finish (untreated)
-- anodization
+- anodization  
 :flag-de: Eloxierung
 
 #### T temper for heat treatable alloys: don't care
@@ -98,8 +101,8 @@ these suppliers provide good information and specs, they are not necessarily che
        +-----------------+
 ```
 
-- 1 core hole with 6mm to mount heatbreak
-    - hole diameter matches M7 tap (M7-pitch = 7mm-1mm = 6mm)
+- 1 **core hole** with 5mm to mount heatbreak
+    - hole diameter matches M6 tap (M6 - pitch = 6mm-1mm = 5mm)
 ```
         15mm
        +-----+
@@ -113,20 +116,26 @@ these suppliers provide good information and specs, they are not necessarily che
 
 
 ### tapping
-- tap: M7
-
-
+- tap: M6
 
 ### offical resource
+#### technical drawing
+![](https://i.imgur.com/KmXLYnF.png)  
+[:link: FreeCAD](https://wiki.opensourceecology.org/wiki/File:Heatsinktechdraw.FCSTD)
+[:link: JPG](https://wiki.opensourceecology.org/wiki/File:Heatsinktechdraw.jpg)
+#### from *D3D Universal Working Doc*
 The following is copied from [Google Pres](https://docs.google.com/presentation/d/1W5hmlqCsap-q-SiPrjyBIqXnOrp_A4rFG1lPcPm5jfo/edit#slide=id.g6c1650adb9_0_0):
 :::info
-Sink is ½”x1” stock aluminum 6061. 1.6” long (for 4040 fan), which allows 7.5 pieces per foot of stock
-Holes for fan heat sink are oversized to 5 mm to allow adjustment on extruder
-Left hole is 5 mm from left, 4 mm down
-Right hole is 31 mm separation
-Hole for heat break - 6 mm
-12 mm away from face
-15 mm to the right
-Tap for 6 mm hole - 5.2 mm, closest inch may be 13/64”
+Sink is ½”x1” stock aluminum 6061. 1.6” long (for 4040 fan), which allows 7.5 pieces per foot of stock  
+Holes for fan heat sink are oversized to 5 mm to allow adjustment on extruder  
+Left hole is 5 mm from left, 4 mm down  
+Right hole is 31 mm separation  
+Hole for heat break - 6 mm  
+12 mm away from face  
+15 mm to the right  
+Tap for 6 mm hole - 5.2 mm, closest inch may be 13/64”  
 ![](https://i.imgur.com/gzy7yUh.png)
 :::
+#### from *D3D Universal 2 Production Manual*
+![](https://i.imgur.com/Sfdsmuw.png)  
+[:link: Google Pres](https://docs.google.com/presentation/d/1tLpmYaehK0-LlIoNx980HyQBJrH-aTxUnT3pAx37nAg/edit#slide=id.g7c2cd3142f_0_0)
