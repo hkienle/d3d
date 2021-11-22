@@ -14,6 +14,6 @@ Version control for HackMD documents describing parts for [OSE](https://www.open
 [magnet-12x3mm](https://hackmd.io/@hkienle/magnet-12x3mm)  
 [screw-m3-25mm-panhead](https://hackmd.io/@hkienle/screw-m3-25mm-panhead)  
 [screw-m6-18mm](https://hackmd.io/@hkienle/screw-m6-18mm)  
-[spring-9.25x33mm](https://hackmd.io/@hkienle/spring-9.25x33mm)  
+[spring-9.25x33mm](https://hackmd.io/@hkienle/spring-925x33mm)  
 [stepper_motor](https://hackmd.io/@hkienle/stepper_motor)  
 [washer-m6](https://hackmd.io/@hkienle/washer-m6)  
